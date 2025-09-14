@@ -6,7 +6,7 @@ Async Telegram bot to play the classic **"Cities" game** 1v1, with statistics, l
 
 ## ✨ Features
 
-- 🎮 Play 1 vs 1 with real opponents
+- 🎮 Play 1 vs 1 with real opponents.
 - ⏳ 60-second timer per turn
 - 🔍 Search cities by first letter
 - 📊 Statistics (wins, losses, max cities per game)
