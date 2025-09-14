@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "cities-bot"
+version = "0.1.0"
+description = "Async Telegram bot for playing Cities game with stats and logging"
+authors = ["Mykhailo Kovryha <kmisha081195@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.2"
+ujson = "^5.9.0"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.0"
+isort = "^5.13"
+flake8 = "^7.1"
+pytest = "^8.2"
+
+[tool.flake8]
+max-line-length = 88
+exclude = [
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
