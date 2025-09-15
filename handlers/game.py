@@ -1,9 +1,7 @@
-import asyncio
-
 from aiogram import F, Router, types
 
-from keyboards import game_menu, main_menu, search_menu
-from logger import *
+from src.keyboards.keyboards import game_menu, main_menu, search_menu
+from src.logger import *
 from services.city_api import city_exists
 from services.game_manager import (
     create_game,

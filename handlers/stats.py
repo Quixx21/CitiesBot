@@ -47,6 +47,6 @@ async def back_to_menu(message: types.Message):
         await message.answer("🎮 Ты сейчас в игре! Дождись окончания партии ⏳")
         return
     reset_state(user_id)
-    from keyboards import main_menu
+    from src.keyboards.keyboards import main_menu
 
     await message.answer("🔙 Главное меню", reply_markup=main_menu)

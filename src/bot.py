@@ -1,11 +1,9 @@
-import asyncio
-
-from aiogram import Bot, Dispatcher, types
+from aiogram import Dispatcher, types
 from aiogram.filters import Command
 
 from config import *
 from handlers import city, game, information, stats
-from keyboards import main_menu
+from src.keyboards.keyboards import main_menu
 from logger import *
 
 bot = Bot(token=API_TOKEN)
