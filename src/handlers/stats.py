@@ -1,8 +1,8 @@
 from aiogram import F, Router, types
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 
-from services.game_manager import get_state, reset_state
-from services.stats_manager import get_user_stats
+from src.services.game_manager import get_state, reset_state
+from src.services.stats_manager import get_user_stats
 
 router = Router()
 

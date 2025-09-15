@@ -2,8 +2,8 @@ from aiogram import F, Router, types
 
 from src.keyboards.keyboards import game_menu, main_menu, search_menu
 from src.logger import *
-from services.city_api import city_exists
-from services.game_manager import (
+from src.services.city_api import city_exists
+from src.services.game_manager import (
     create_game,
     games,
     get_opponent,
@@ -11,7 +11,7 @@ from services.game_manager import (
     reset_state,
     set_state,
 )
-from services.stats_manager import update_stats
+from src.services.stats_manager import update_stats
 
 router = Router()
 waiting_player = None
