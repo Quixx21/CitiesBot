@@ -1,7 +1,9 @@
 import json
 import os
+from pathlib import Path
 
-STATS_FILE = "../data/stats.json"
+BASE_DIR = Path(__file__).resolve().parent.parent
+STATS_FILE = BASE_DIR / "data" / "stats.json"
 
 
 def load_stats():
