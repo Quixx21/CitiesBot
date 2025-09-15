@@ -1,6 +1,6 @@
 from aiogram import Router, types
 
-from src.services.city_api import find_cities_by_letter
+from services.city_api import find_cities_by_letter
 
 router = Router()
 

@@ -1,8 +1,8 @@
 from aiogram import F, Router, types
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 
-from src.services.game_manager import get_state, reset_state
-from src.services.stats_manager import get_user_stats
+from services.game_manager import get_state, reset_state
+from services.stats_manager import get_user_stats
 
 router = Router()
 
@@ -47,6 +47,6 @@ async def back_to_menu(message: types.Message):
         await message.answer("🎮 Ты сейчас в игре! Дождись окончания партии ⏳")
         return
     reset_state(user_id)
-    from src.keyboards.keyboards import main_menu
+    from keyboards import main_menu
 
     await message.answer("🔙 Главное меню", reply_markup=main_menu)

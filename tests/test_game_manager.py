@@ -1,4 +1,5 @@
-from src.services.game_manager import (
+import pytest
+from services.game_manager import (
     create_game,
     get_opponent,
     set_state,

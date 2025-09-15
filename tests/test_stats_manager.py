@@ -1,5 +1,6 @@
 import json
-from src.services import stats_manager
+from pathlib import Path
+from services import stats_manager
 
 
 def test_stats_update_and_read(tmp_path, monkeypatch):

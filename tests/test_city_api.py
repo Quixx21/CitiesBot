@@ -1,4 +1,5 @@
-from src.services import city_api
+import types
+from services import city_api
 
 
 def test_find_cities_by_letter_with_population(monkeypatch):
