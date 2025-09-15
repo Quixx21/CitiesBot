@@ -10,7 +10,7 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)-8s | %(name)s | %(funcName)s() | %(message)s",
     handlers=[
         logging.StreamHandler(sys.stdout),  # logs to console
-        logging.FileHandler("bot.log", encoding="utf-8"),  # logs to file
+        logging.FileHandler("../bot.log", encoding="utf-8"),  # logs to file
     ],
 )
 
